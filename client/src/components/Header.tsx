@@ -60,9 +60,9 @@ export default function Header() {
             
             <Button 
               className="hidden md:flex bg-destructive text-destructive-foreground hover-elevate active-elevate-2"
-              data-testid="button-get-started"
+              data-testid="button-inquire-now"
             >
-              Get Started
+              Inquire Now
             </Button>
             
             <Button 
@@ -92,8 +92,8 @@ export default function Header() {
               <a href="#contact" className="text-sm font-medium" data-testid="link-mobile-contact">
                 Contact
               </a>
-              <Button className="w-full bg-destructive text-destructive-foreground" data-testid="button-mobile-get-started">
-                Get Started
+              <Button className="w-full bg-destructive text-destructive-foreground" data-testid="button-mobile-inquire-now">
+                Inquire Now
               </Button>
             </nav>
           </div>
