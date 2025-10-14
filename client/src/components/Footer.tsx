@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { SiLinkedin, SiX, SiFacebook } from "react-icons/si";
+import logo from "@assets/FullLogo_Transparent_NoBuffer_1760418284342.png";
 
 const footerSections = [
   {
@@ -27,9 +28,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 mb-12">
           <div className="lg:col-span-2">
-            <h3 className="text-2xl font-bold mb-4" data-testid="text-footer-brand">
-              Japan Travel Services
-            </h3>
+            <img 
+              src={logo} 
+              alt="Shikoku Japan Guides" 
+              className="h-12 w-auto mb-4" 
+              data-testid="img-footer-logo"
+            />
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Premium B2B travel solutions for businesses and professionals exploring Japan.
             </p>

@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Globe, Menu } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 import { useState } from "react";
+import logo from "@assets/FullLogo_Transparent_NoBuffer_1760418284342.png";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -11,9 +12,12 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-12">
-            <h1 className="text-2xl font-bold" data-testid="text-header-brand">
-              Japan Travel
-            </h1>
+            <img 
+              src={logo} 
+              alt="Shikoku Japan Guides" 
+              className="h-10 w-auto" 
+              data-testid="img-header-logo"
+            />
             
             <nav className="hidden md:flex items-center gap-8">
               <a 
