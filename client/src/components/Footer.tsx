@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { SiLinkedin, SiX, SiFacebook } from "react-icons/si";
-import logo from "@assets/FullLogo_Transparent_NoBuffer_1760418284342.png";
+import logo from "@assets/FullLogo_Transparent_NoBuffer (1)_1760418700290.png";
 
 const footerSections = [
   {
@@ -30,8 +30,8 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <img 
               src={logo} 
-              alt="Shikoku Japan Guides" 
-              className="h-12 w-auto mb-4" 
+              alt="Shikoku Destination Japan" 
+              className="h-10 w-auto mb-4" 
               data-testid="img-footer-logo"
             />
             <p className="text-muted-foreground mb-6 leading-relaxed">

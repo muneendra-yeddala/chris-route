@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Globe, Menu } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 import { useState } from "react";
-import logo from "@assets/FullLogo_Transparent_NoBuffer_1760418284342.png";
+import logo from "@assets/FullLogo_Transparent_NoBuffer (1)_1760418700290.png";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -14,8 +14,8 @@ export default function Header() {
           <div className="flex items-center gap-12">
             <img 
               src={logo} 
-              alt="Shikoku Japan Guides" 
-              className="h-10 w-auto" 
+              alt="Shikoku Destination Japan" 
+              className="h-8 w-auto" 
               data-testid="img-header-logo"
             />
             
