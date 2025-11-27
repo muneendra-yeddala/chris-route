@@ -1,20 +1,20 @@
-import { Search, CalendarCheck, ThumbsUp } from "lucide-react";
+import { Search, CalendarCheck, Heart } from "lucide-react";
 
 const steps = [
   {
     icon: Search,
-    title: "Search & Select",
-    description: "Browse our curated selection of premium vehicles and expert guides across Japan",
+    title: "Browse & Choose",
+    description: "Explore our guides, read reviews, and find the perfect match for your interests and travel style",
   },
   {
     icon: CalendarCheck,
-    title: "Book & Customize",
-    description: "Choose your dates, customize your service, and submit your booking request",
+    title: "Book Your Date",
+    description: "Select your preferred date and customize your itinerary with your guide before your trip",
   },
   {
-    icon: ThumbsUp,
-    title: "Confirm & Enjoy",
-    description: "Receive confirmation and enjoy a seamless, professional travel experience",
+    icon: Heart,
+    title: "Enjoy Your Adventure",
+    description: "Meet your guide and discover hidden gems, local favorites, and unforgettable experiences",
   },
 ];
 
@@ -27,7 +27,7 @@ export default function HowItWorks() {
             How It Works
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Simple, efficient booking process designed for busy professionals
+            Book your personal guide in three simple steps
           </p>
         </div>
         

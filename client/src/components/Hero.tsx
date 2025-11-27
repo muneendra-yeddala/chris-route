@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, MapPin, Car } from "lucide-react";
+import { Calendar, MapPin, Users } from "lucide-react";
 import heroImage from "@assets/stock_images/mount_fuji_with_cher_68b5c08c.jpg";
 
 export default function Hero() {
@@ -13,27 +13,27 @@ export default function Hero() {
       
       <div className="relative z-10 max-w-5xl mx-auto px-8 text-center">
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6" data-testid="text-hero-title">
-          Premium Travel Services in Japan
+          Your Personal Guide to the Kanto Region
         </h1>
         <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
-          Book private cars and expert tour guides for your business travel across Japan
+          Discover Tokyo, Yokohama, Nikko, Kamakura & more with a local expert by your side
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
           <Button 
             size="lg" 
             className="bg-destructive text-destructive-foreground hover-elevate active-elevate-2 border border-destructive-border"
-            data-testid="button-start-booking"
+            data-testid="button-book-guide"
           >
-            Start Booking
+            Book a Guide
           </Button>
           <Button 
             size="lg" 
             variant="outline" 
             className="backdrop-blur-md bg-white/10 border-white/30 text-white hover:bg-white/20"
-            data-testid="button-learn-more"
+            data-testid="button-explore-tours"
           >
-            Learn More
+            Explore Tours
           </Button>
         </div>
 
@@ -41,22 +41,30 @@ export default function Hero() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="flex items-center gap-3">
               <MapPin className="h-5 w-5 text-muted-foreground" />
-              <input 
-                type="text" 
-                placeholder="Location in Japan" 
-                className="flex-1 bg-transparent border-none outline-none text-foreground placeholder:text-muted-foreground"
-                data-testid="input-location"
-              />
-            </div>
-            <div className="flex items-center gap-3 border-l-0 md:border-l border-border pl-0 md:pl-4">
-              <Car className="h-5 w-5 text-muted-foreground" />
               <select 
                 className="flex-1 bg-transparent border-none outline-none text-foreground"
-                data-testid="select-service-type"
+                data-testid="select-destination"
               >
-                <option>Private Car</option>
-                <option>Tour Guide</option>
-                <option>Custom Package</option>
+                <option value="">Select Destination</option>
+                <option value="tokyo">Tokyo</option>
+                <option value="yokohama">Yokohama</option>
+                <option value="nikko">Nikko</option>
+                <option value="kamakura">Kamakura</option>
+                <option value="hakone">Hakone</option>
+                <option value="kawagoe">Kawagoe</option>
+              </select>
+            </div>
+            <div className="flex items-center gap-3 border-l-0 md:border-l border-border pl-0 md:pl-4">
+              <Users className="h-5 w-5 text-muted-foreground" />
+              <select 
+                className="flex-1 bg-transparent border-none outline-none text-foreground"
+                data-testid="select-group-size"
+              >
+                <option value="">Group Size</option>
+                <option value="1">Solo Traveler</option>
+                <option value="2">2 People</option>
+                <option value="3-4">3-4 People</option>
+                <option value="5+">5+ People</option>
               </select>
             </div>
             <div className="flex items-center gap-3 border-l-0 md:border-l border-border pl-0 md:pl-4">
@@ -70,9 +78,9 @@ export default function Hero() {
           </div>
           <Button 
             className="w-full mt-4 bg-primary text-primary-foreground hover-elevate active-elevate-2"
-            data-testid="button-search"
+            data-testid="button-find-guide"
           >
-            Search Services
+            Find Your Guide
           </Button>
         </div>
       </div>

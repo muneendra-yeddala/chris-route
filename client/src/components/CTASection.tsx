@@ -12,27 +12,27 @@ export default function CTASection() {
       
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <h2 className="text-4xl md:text-6xl font-bold text-white mb-6" data-testid="text-cta-title">
-          Ready to Experience Japan?
+          Ready for Your Adventure?
         </h2>
         <p className="text-xl text-white/90 mb-8 leading-relaxed">
-          Book your premium travel services today and discover the best of Japan with expert guidance
+          Connect with a local guide and experience the Kanto region like never before
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button 
             size="lg" 
             className="bg-destructive text-destructive-foreground hover-elevate active-elevate-2 border border-destructive-border text-lg px-8"
-            data-testid="button-book-now"
+            data-testid="button-find-guide"
           >
-            Book Now
+            Find a Guide
           </Button>
           <Button 
             size="lg" 
             variant="outline" 
             className="backdrop-blur-md bg-white/10 border-white/30 text-white hover:bg-white/20 text-lg px-8"
-            data-testid="button-contact-us"
+            data-testid="button-view-tours"
           >
-            Contact Us
+            View All Tours
           </Button>
         </div>
       </div>

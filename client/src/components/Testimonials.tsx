@@ -7,17 +7,17 @@ import testimonial2 from "@assets/stock_images/businessman_professi_66e8c5fb.jpg
 //todo: remove mock functionality
 const testimonials = [
   {
-    name: "David Chen",
-    role: "CEO, Tech Solutions Inc.",
+    name: "Michael Thompson",
+    location: "California, USA",
     image: testimonial1,
-    content: "Exceptional service from start to finish. Our team's business trip to Tokyo was seamless thanks to their professional drivers and cultural expertise.",
+    content: "Our guide Yuki made our Tokyo trip absolutely magical! She took us to hidden ramen spots, explained the local customs, and even helped us navigate the train system. Worth every yen!",
     rating: 5,
   },
   {
-    name: "Sarah Williams",
-    role: "Operations Director, Global Corp",
+    name: "Emma Richardson",
+    location: "London, UK",
     image: testimonial2,
-    content: "The tour guide service exceeded our expectations. Knowledgeable, punctual, and made our Kyoto visit truly memorable for our international clients.",
+    content: "The Kamakura day trip exceeded all expectations. Our guide knew the best times to avoid crowds at the temples and shared fascinating stories about the history. A must-do experience!",
     rating: 5,
   },
 ];
@@ -28,10 +28,10 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4" data-testid="text-testimonials-title">
-            Client Testimonials
+            What Travelers Say
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Hear from business leaders who trust us with their Japan travel needs
+            Real stories from travelers who explored Japan with our guides
           </p>
         </div>
         
@@ -58,8 +58,8 @@ export default function Testimonials() {
                     <p className="font-semibold" data-testid={`text-testimonial-name-${index}`}>
                       {testimonial.name}
                     </p>
-                    <p className="text-sm text-muted-foreground" data-testid={`text-testimonial-role-${index}`}>
-                      {testimonial.role}
+                    <p className="text-sm text-muted-foreground" data-testid={`text-testimonial-location-${index}`}>
+                      {testimonial.location}
                     </p>
                   </div>
                 </div>

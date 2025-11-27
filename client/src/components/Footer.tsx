@@ -1,24 +1,24 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin } from "lucide-react";
-import { SiLinkedin, SiX, SiFacebook } from "react-icons/si";
+import { SiLinkedin, SiX, SiFacebook, SiInstagram } from "react-icons/si";
 import logo from "@assets/FullLogo_Transparent_NoBuffer (1)_1760418700290.png";
 
 const footerSections = [
   {
-    title: "Services",
-    links: ["Private Cars", "Tour Guides", "Custom Packages", "Corporate Travel", "Airport Transfer"],
+    title: "Destinations",
+    links: ["Tokyo", "Yokohama", "Kamakura", "Nikko", "Hakone", "Kawagoe"],
   },
   {
-    title: "Company",
-    links: ["About Us", "Careers", "Partner With Us", "Press & Media", "Contact"],
+    title: "Experiences",
+    links: ["Personal Guides", "Group Tours", "Photo Tours", "Food Tours", "Custom Trips"],
   },
   {
     title: "Support",
-    links: ["Help Center", "Booking Policy", "Cancellation", "Safety", "FAQ"],
+    links: ["Help Center", "Booking Guide", "Cancellation Policy", "Safety Info", "FAQ"],
   },
   {
-    title: "Legal",
-    links: ["Terms of Service", "Privacy Policy", "Cookie Policy", "Insurance"],
+    title: "Company",
+    links: ["About Us", "Our Guides", "Contact", "Privacy Policy", "Terms of Service"],
   },
 ];
 
@@ -30,12 +30,12 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <img 
               src={logo} 
-              alt="Shikoku Destination Japan" 
+              alt="Shibuya Travel Destination Japan" 
               className="h-10 w-auto mb-4" 
               data-testid="img-footer-logo"
             />
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Premium B2B travel solutions for businesses and professionals exploring Japan.
+              Connecting travelers with passionate local guides for unforgettable experiences in Japan's Kanto region.
             </p>
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-sm">
@@ -44,11 +44,11 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3 text-sm">
                 <Mail className="h-4 w-4 text-muted-foreground" />
-                <span data-testid="text-email">contact@japantravel.com</span>
+                <span data-testid="text-email">hello@shibuyatravel.com</span>
               </div>
               <div className="flex items-center gap-3 text-sm">
                 <MapPin className="h-4 w-4 text-muted-foreground" />
-                <span data-testid="text-address">Tokyo, Japan</span>
+                <span data-testid="text-address">Shibuya, Tokyo, Japan</span>
               </div>
             </div>
           </div>
@@ -78,18 +78,21 @@ export default function Footer() {
         <div className="border-t border-border pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground" data-testid="text-copyright">
-              © 2024 Japan Travel Services. All rights reserved.
+              © 2024 Shibuya Travel. All rights reserved.
             </p>
             
             <div className="flex gap-4">
-              <Button variant="ghost" size="icon" className="h-9 w-9" data-testid="button-linkedin">
-                <SiLinkedin className="h-5 w-5" />
+              <Button variant="ghost" size="icon" className="h-9 w-9" data-testid="button-instagram">
+                <SiInstagram className="h-5 w-5" />
+              </Button>
+              <Button variant="ghost" size="icon" className="h-9 w-9" data-testid="button-facebook">
+                <SiFacebook className="h-5 w-5" />
               </Button>
               <Button variant="ghost" size="icon" className="h-9 w-9" data-testid="button-twitter">
                 <SiX className="h-5 w-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="h-9 w-9" data-testid="button-facebook">
-                <SiFacebook className="h-5 w-5" />
+              <Button variant="ghost" size="icon" className="h-9 w-9" data-testid="button-linkedin">
+                <SiLinkedin className="h-5 w-5" />
               </Button>
             </div>
           </div>
