@@ -3,13 +3,7 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
- const REPO_NAME = "/chris-route/";
-
-//  const BASE_PATH = process.env.NODE_ENV === 'production' ? REPO_NAME : '/'; 
-
-
 export default defineConfig({
-  base: REPO_NAME,
   plugins: [
     react(),
     runtimeErrorOverlay(),
@@ -37,10 +31,6 @@ export default defineConfig({
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
   },
-  // ,
-  //  preview: {
-  //   port: 5000, // <--- Add this to run 'npm run preview' on port 5000
-  // },
   server: {
     fs: {
       strict: true,
