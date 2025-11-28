@@ -4,8 +4,8 @@ import ServiceCategories from "@/components/ServiceCategories";
 import HowItWorks from "@/components/HowItWorks";
 import FeaturedServices from "@/components/FeaturedServices";
 import WhyChooseUs from "@/components/WhyChooseUs";
-import PartnerLogos from "@/components/PartnerLogos";
-import Testimonials from "@/components/Testimonials";
+// import PartnerLogos from "@/components/PartnerLogos";
+// import Testimonials from "@/components/Testimonials";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
@@ -19,9 +19,9 @@ export default function Home() {
         <HowItWorks />
         <FeaturedServices />
         <WhyChooseUs />
-        <PartnerLogos />
-        <Testimonials />
-        <CTASection />
+        {/* <PartnerLogos /> */}
+        {/* <Testimonials /> */}
+        {/* <CTASection /> */}
       </main>
       <Footer />
     </div>
