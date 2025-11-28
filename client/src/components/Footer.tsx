@@ -37,6 +37,26 @@ export default function Footer() {
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Connecting travelers with passionate local guides for unforgettable experiences in Japan's Kanto region.
             </p>
+            {/* <div className="space-y-3">
+              <div className="flex items-center gap-3 text-sm">
+                <Phone className="h-4 w-4 text-muted-foreground" />
+                <span data-testid="text-phone">+81 3-1234-5678</span>
+              </div>
+              <div className="flex items-center gap-3 text-sm">
+                <Mail className="h-4 w-4 text-muted-foreground" />
+                <span data-testid="text-email">hello@shibuyatravel.com</span>
+              </div>
+              <div className="flex items-center gap-3 text-sm">
+                <MapPin className="h-4 w-4 text-muted-foreground" />
+                <span data-testid="text-address">Shibuya, Tokyo, Japan</span>
+              </div>
+            </div> */}
+          </div>
+
+           <div className="lg:col-span-3">
+            <p className="text-muted-foreground mb-6 leading-relaxed">
+              Contact Us
+            </p>
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-sm">
                 <Phone className="h-4 w-4 text-muted-foreground" />
@@ -52,8 +72,9 @@ export default function Footer() {
               </div>
             </div>
           </div>
+
           
-          {footerSections.map((section, index) => (
+          {/* {footerSections.map((section, index) => (
             <div key={index}>
               <h4 className="font-semibold mb-4" data-testid={`text-footer-section-${index}`}>
                 {section.title}
@@ -72,7 +93,7 @@ export default function Footer() {
                 ))}
               </ul>
             </div>
-          ))}
+          ))} */}
         </div>
         
         <div className="border-t border-border pt-8">
