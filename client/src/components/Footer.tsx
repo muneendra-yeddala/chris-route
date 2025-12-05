@@ -24,7 +24,7 @@ const footerSections = [
 
 export default function Footer() {
   return (
-    <footer className="bg-card border-t border-card-border">
+    <footer id="contact" className="bg-card border-t border-card-border">
       <div className="max-w-7xl mx-auto px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 mb-12">
           <div className="lg:col-span-2">

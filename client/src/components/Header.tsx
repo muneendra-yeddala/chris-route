@@ -3,6 +3,8 @@ import { Globe, Menu } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 import { useState } from "react";
 import logo from "@assets/FullLogo_Transparent_NoBuffer (1)_1760418700290.png";
+import { Link } from 'react-router-dom';
+// import { Link } from 'wouter';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -52,18 +54,39 @@ export default function Header() {
           </div>
           
           <div className="flex items-center gap-4">
-            <Button variant="ghost" size="icon" className="hidden md:flex" data-testid="button-language">
+            {/* <Button variant="ghost" size="icon" className="hidden md:flex" data-testid="button-language">
               <Globe className="h-5 w-5" />
-            </Button>
+            </Button> */}
             
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
             
-            <Button 
+            {/* <Button 
               className="hidden md:flex bg-destructive text-destructive-foreground hover-elevate active-elevate-2"
               data-testid="button-inquire-now"
             >
               Inquire Now
-            </Button>
+            </Button> */}
+
+            <div className="flex items-center gap-4">
+              {/* ... other items ... */}
+              
+              <a 
+                href="mailto:your.email@example.com?subject=Inquiry%20from%20Website"
+                // Pass the button styling and data-testid to the anchor tag
+               className="w-full inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors h-10 px-4 py-2 
+                   bg-destructive text-destructive-foreground hover:bg-destructive/90 
+                   active-elevate-2" // Note: You may need to adjust classes based on your Button's default styles
+        data-testid="button-mobile-inquire-now"
+         >
+                {/* The Button component is now just for appearance */}
+                {/* <Button  className="bg-transparent text-destructive-foreground hover:bg-transparent" >
+                  Inquire Now
+                </Button> */}
+                 Inquire Now
+              </a>
+
+            </div>
+
             
             <Button 
               variant="ghost" 
@@ -74,6 +97,8 @@ export default function Header() {
             >
               <Menu className="h-5 w-5" />
             </Button>
+
+
           </div>
         </div>
         
@@ -92,9 +117,20 @@ export default function Header() {
               <a href="#contact" className="text-sm font-medium" data-testid="link-mobile-contact">
                 Contact
               </a>
-              <Button className="w-full bg-destructive text-destructive-foreground" data-testid="button-mobile-inquire-now">
+              {/* <Button className="w-full bg-destructive text-destructive-foreground" data-testid="button-mobile-inquire-now">
                 Inquire Now
-              </Button>
+              </Button> */}
+              <a 
+        href="mailto:your.email@example.com?subject=Mobile%20Inquiry%20from%20Website" 
+        target="_blank" // Optional: Opens mail app in a new context
+        // Apply the button's styling classes directly to the anchor tag
+        className="w-full inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors h-10 px-4 py-2 
+                   bg-destructive text-destructive-foreground hover:bg-destructive/90 
+                   active-elevate-2" // Note: You may need to adjust classes based on your Button's default styles
+        data-testid="button-mobile-inquire-now">
+        Inquire Now
+      </a>
+
             </nav>
           </div>
         )}
