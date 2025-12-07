@@ -102,7 +102,7 @@ export default function Footer() {
               © 2024 Shibuya Travel. All rights reserved.
             </p>
             
-            <div className="flex gap-4">
+            {/* <div className="flex gap-4">
               <Button variant="ghost" size="icon" className="h-9 w-9" data-testid="button-instagram">
                 <SiInstagram className="h-5 w-5" />
               </Button>
@@ -115,7 +115,7 @@ export default function Footer() {
               <Button variant="ghost" size="icon" className="h-9 w-9" data-testid="button-linkedin">
                 <SiLinkedin className="h-5 w-5" />
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
