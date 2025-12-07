@@ -3,6 +3,5 @@ npm build
 npm run dev
 
 
-
-npm run preview
 npm run build
+npm run preview
