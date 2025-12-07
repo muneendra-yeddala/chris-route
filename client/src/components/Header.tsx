@@ -32,7 +32,7 @@ export default function Header() {
             
             {/* 1. DESKTOP INQUIRE NOW BUTTON (Styled <a> tag) */}
             <a 
-              href="mailto:your.email@example.com?subject=Inquiry%20from%20Website"
+              href="mailto:hello@shibuyatravel.com?subject=Inquiry%20from%20Website"
               target="_blank"
               // The key to layout is the `hidden md:flex` class
               className="hidden md:flex inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2 
@@ -66,7 +66,7 @@ export default function Header() {
               
               {/* 3. MOBILE INQUIRE NOW BUTTON (Styled <a> tag) */}
               <a 
-                href="mailto:your.email@example.com?subject=Mobile%20Inquiry%20from%20Website" 
+                href="mailto:hello@shibuyatravel.com?subject=Inquiry%20from%20Website" 
                 target="_blank"
                 className="w-full inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors h-10 px-4 py-2 
                            bg-destructive text-destructive-foreground hover:bg-destructive/90"
