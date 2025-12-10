@@ -2,8 +2,11 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 
-const REPO_NAME = "/chris-route/";
-const BASE_PATH = process.env.NODE_ENV === 'production' ? REPO_NAME : '/';
+// const REPO_NAME = "/chris-route/";
+// const BASE_PATH = process.env.NODE_ENV === 'production' ? REPO_NAME : '/';
+const FULL_BASE_URL = "https://www.shibuyatravel.com/chris-route/";
+const BASE_PATH = process.env.NODE_ENV === 'production' ? FULL_BASE_URL : '/';
+
 // const BASE_PATH = './';
 const PROJECT_ROOT = path.resolve(import.meta.dirname, "client");
 const OUTPUT_DIR = path.resolve(import.meta.dirname, "docs");
