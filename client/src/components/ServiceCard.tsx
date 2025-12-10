@@ -75,11 +75,11 @@ export default function ServiceCard({
         </div>
       </CardContent>
       
-      <CardFooter className="p-6 pt-0">
+      {/* <CardFooter className="p-6 pt-0">
         <Button className="w-full" variant="outline" data-testid="button-view-details">
           View Details
         </Button>
-      </CardFooter>
+      </CardFooter> */}
     </Card>
   );
 }

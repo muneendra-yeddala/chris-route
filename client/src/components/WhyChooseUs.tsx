@@ -25,7 +25,7 @@ const benefits = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-20 px-8 bg-muted/30">
+    <section id="about" className="py-20 px-8 bg-muted/30">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4" data-testid="text-why-choose-us-title">

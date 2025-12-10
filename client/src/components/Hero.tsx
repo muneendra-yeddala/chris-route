@@ -16,10 +16,10 @@ export default function Hero() {
           Your Personal Guide to the Kanto Region
         </h1>
         <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
-          Discover Tokyo, Yokohama, Nikko, Kamakura & more with a local expert by your side
+          Discover Yokohama, Kamakura, & Hakone with a local expert by your side
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+        {/* <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
           <Button 
             size="lg" 
             className="bg-destructive text-destructive-foreground hover-elevate active-elevate-2 border border-destructive-border"
@@ -35,9 +35,9 @@ export default function Hero() {
           >
             Explore Tours
           </Button>
-        </div>
+        </div> */}
 
-        <div className="bg-white/95 dark:bg-card/95 backdrop-blur-md rounded-xl p-6 shadow-2xl max-w-4xl mx-auto">
+        {/* <div className="bg-white/95 dark:bg-card/95 backdrop-blur-md rounded-xl p-6 shadow-2xl max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="flex items-center gap-3">
               <MapPin className="h-5 w-5 text-muted-foreground" />
@@ -82,7 +82,7 @@ export default function Hero() {
           >
             Find Your Guide
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
