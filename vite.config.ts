@@ -4,7 +4,8 @@ import path from "path";
 // import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
 const REPO_NAME = "/chris-route/";
-const BASE_PATH = process.env.NODE_ENV === 'production' ? REPO_NAME : '/';
+//const BASE_PATH = process.env.NODE_ENV === 'production' ? REPO_NAME : '/';
+const BASE_PATH = REPO_NAME;
 const PROJECT_ROOT = path.resolve(import.meta.dirname, "client");
 const OUTPUT_DIR = path.resolve(import.meta.dirname, "docs");
 
