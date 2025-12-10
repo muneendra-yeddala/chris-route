@@ -16,7 +16,7 @@ export default function Hero() {
           Your Personal Guide to the Kanto Region
         </h1>
         <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
-          Discover Tokyo, Yokohama, Nikko, Kamakura & more with a local expert by your side
+          Discover Yokohama, Kamakura, & Hakone with a local expert by your side
         </p>
         
         {/* <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">

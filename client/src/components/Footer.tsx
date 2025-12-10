@@ -58,18 +58,18 @@ export default function Footer() {
               Contact Us
             </p>
             <div className="space-y-3">
-              <div className="flex items-center gap-3 text-sm">
+              {/* <div className="flex items-center gap-3 text-sm">
                 <Phone className="h-4 w-4 text-muted-foreground" />
                 <span data-testid="text-phone">+81 3-1234-5678</span>
-              </div>
+              </div> */}
               <div className="flex items-center gap-3 text-sm">
                 <Mail className="h-4 w-4 text-muted-foreground" />
-                <span data-testid="text-email">hello@shibuyatravel.com</span>
+                <span data-testid="text-email">info@shibuyatravel.com</span>
               </div>
-              <div className="flex items-center gap-3 text-sm">
+              {/* <div className="flex items-center gap-3 text-sm">
                 <MapPin className="h-4 w-4 text-muted-foreground" />
                 <span data-testid="text-address">Shibuya, Tokyo, Japan</span>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -99,7 +99,7 @@ export default function Footer() {
         <div className="border-t border-border pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground" data-testid="text-copyright">
-              © 2024 Shibuya Travel. All rights reserved.
+              © 2025 Shibuya Travel. All rights reserved.
             </p>
             
             {/* <div className="flex gap-4">
