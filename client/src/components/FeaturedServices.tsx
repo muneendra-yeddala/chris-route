@@ -4,7 +4,7 @@ import kyotoImage from "@assets/stock_images/traditional_kyoto_te_7ab57085.jpg";
 import tokyoImage from "@assets/stock_images/tokyo_cityscape_skyl_8baf1edb.jpg";
 import yokohamaImage from "@assets/stock_images/yokohama-photo-7948633.jpg";
 import kamakuraImage  from "@assets/stock_images/kamakura.jpg";
-import hakone  from "@assets/stock_images/hakone.jpg";
+import hakone  from "@assets/stock_images/free-photo-of-hakone-shrine-in-japan.jpg";
 
 //todo: remove mock functionality
 const services = [
