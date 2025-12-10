@@ -9,8 +9,8 @@ import Home from "@/pages/Home";
 import NotFound from "@/pages/not-found";
 
 // Define the GitHub Pages base path for wouter
-const GITHUB_PAGES_BASE_PATH = "/chris-route"; 
-const routerBase = import.meta.env.PROD ? GITHUB_PAGES_BASE_PATH : undefined;
+// const GITHUB_PAGES_BASE_PATH = "/chris-route"; 
+// const routerBase = import.meta.env.PROD ? GITHUB_PAGES_BASE_PATH : undefined;
 // The internal router function you defined
 function AppRouter() {
   return (
@@ -30,7 +30,8 @@ function App() {
         <Toaster />
         
         {/* Wrap the router configuration with the base path */}
-        <Router base={routerBase}>
+        {/* <Router base={routerBase}> */}
+        <Router>
           <AppRouter />
         </Router>
 
