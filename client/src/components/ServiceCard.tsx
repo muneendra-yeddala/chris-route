@@ -1,9 +1,11 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { MapPin, Users, Clock } from "lucide-react";
+import { MapPin, Users, Clock, Link } from "lucide-react";
+import { useLocation } from "wouter"; // 1. Import useLocation
 
 interface ServiceCardProps {
+  slug: string;
   image: string;
   title: string;
   location: string;
@@ -15,6 +17,7 @@ interface ServiceCardProps {
 }
 
 export default function ServiceCard({
+  slug,
   image,
   title,
   location,
@@ -24,6 +27,7 @@ export default function ServiceCard({
   featured,
   verified,
 }: ServiceCardProps) {
+  const [, setLocation] = useLocation();
   return (
     <Card className="overflow-hidden hover-elevate transition-shadow" data-testid={`card-service-${title}`}>
       <div className="relative aspect-[4/3] overflow-hidden">
@@ -74,11 +78,30 @@ export default function ServiceCard({
           {priceRange}
         </div>
       </CardContent>
+
+      {/* 4. Use the Button with onClick */}
+      <CardFooter className="p-6 pt-0">
+        <Button 
+          className="w-full" 
+          variant="default" 
+          onClick={() => setLocation(`/tour/${slug}`)} // Programmatic navigation
+        >
+          Explore Experience
+        </Button>
+      </CardFooter>
       
       {/* <CardFooter className="p-6 pt-0">
         <Button className="w-full" variant="outline" data-testid="button-view-details">
           View Details
         </Button>
+      </CardFooter> */}
+      {/* 3. Re-enable CardFooter with Link */}
+      {/* <CardFooter className="p-6 pt-0">
+        <Link href={`/tour/${slug}`} className="w-full">
+          <Button className="w-full" variant="default" data-testid="button-view-details">
+            Explore Experience
+          </Button>
+        </Link>
       </CardFooter> */}
     </Card>
   );

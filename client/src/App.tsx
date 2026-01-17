@@ -7,6 +7,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/Home";
 import NotFound from "@/pages/not-found";
+import TourDetails from "@/pages/TourDetails";
 
 // Define the GitHub Pages base path for wouter
 // const GITHUB_PAGES_BASE_PATH = "/chris-route"; 
@@ -17,6 +18,7 @@ function AppRouter() {
     <Switch>
       <Route path="/" component={Home} />
       {/* <Route path="/services" component={ServicesPage} /> */}
+      <Route path="/tour/:slug" component={TourDetails} />
       <Route component={NotFound} />
     </Switch>
   );
