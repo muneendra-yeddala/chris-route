@@ -80,7 +80,7 @@ export default function ServiceCard({
       </CardContent>
 
       {/* 4. Use the Button with onClick . THIS WORKS WITH BUTTON and Link to TourDetails.tsx page. ENABLE it later */}
-      {/* <CardFooter className="p-6 pt-0">
+      { <CardFooter className="p-6 pt-0">
         <Button 
           className="w-full" 
           variant="default" 
@@ -88,7 +88,7 @@ export default function ServiceCard({
         >
           Explore Experience
         </Button>
-      </CardFooter> */}
+      </CardFooter> }
     </Card>
   );
 }
