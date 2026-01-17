@@ -79,8 +79,8 @@ export default function ServiceCard({
         </div>
       </CardContent>
 
-      {/* 4. Use the Button with onClick */}
-      <CardFooter className="p-6 pt-0">
+      {/* 4. Use the Button with onClick . THIS WORKS WITH BUTTON and Link to TourDetails.tsx page. ENABLE it later */}
+      {/* <CardFooter className="p-6 pt-0">
         <Button 
           className="w-full" 
           variant="default" 
@@ -88,14 +88,14 @@ export default function ServiceCard({
         >
           Explore Experience
         </Button>
-      </CardFooter>
+      </CardFooter> */}
       
       {/* <CardFooter className="p-6 pt-0">
         <Button className="w-full" variant="outline" data-testid="button-view-details">
           View Details
         </Button>
       </CardFooter> */}
-      {/* 3. Re-enable CardFooter with Link */}
+    
       {/* <CardFooter className="p-6 pt-0">
         <Link href={`/tour/${slug}`} className="w-full">
           <Button className="w-full" variant="default" data-testid="button-view-details">
