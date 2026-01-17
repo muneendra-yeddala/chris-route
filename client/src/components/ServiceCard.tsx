@@ -89,20 +89,6 @@ export default function ServiceCard({
           Explore Experience
         </Button>
       </CardFooter> */}
-      
-      {/* <CardFooter className="p-6 pt-0">
-        <Button className="w-full" variant="outline" data-testid="button-view-details">
-          View Details
-        </Button>
-      </CardFooter> */}
-    
-      {/* <CardFooter className="p-6 pt-0">
-        <Link href={`/tour/${slug}`} className="w-full">
-          <Button className="w-full" variant="default" data-testid="button-view-details">
-            Explore Experience
-          </Button>
-        </Link>
-      </CardFooter> */}
     </Card>
   );
 }
