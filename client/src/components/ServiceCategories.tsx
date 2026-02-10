@@ -31,7 +31,7 @@ export default function ServiceCategories() {
             How Would You Like to Explore?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Choose the perfect guide experience for your journey through Japan's Kanto region
+            Choose the perfect guide experience for your journey through Japan
           </p>
         </div>
         

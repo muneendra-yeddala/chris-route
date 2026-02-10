@@ -3,7 +3,7 @@ import { Calendar, MapPin, Users } from "lucide-react";
 import heroImageDesktop from "@assets/stock_images/home_banner.jpeg";
 import heroImageMobile from "@assets/stock_images/home_banner_mobile.jpeg";
 
-export default function Hero() {
+export default function HeroBack() {
   return (
     <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
           {/* MOBILE IMAGE (Below 768px) */}
@@ -11,7 +11,10 @@ export default function Hero() {
             className="absolute inset-0 w-full h-full bg-cover bg-center md:hidden"
             style={{ 
               backgroundImage: `url(${heroImageMobile})`,
-              backgroundRepeat: 'no-repeat' 
+              backgroundSize: "contain",
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: "center",
+              backgroundColor: "#1a1a1a"
             }}
           />
 
@@ -24,9 +27,7 @@ export default function Hero() {
             }}
           />
 
-          <div className="relative z-20 text-center px-8">
-            <h1 className="text-white text-5xl font-bold">Your Title Here</h1>
-          </div>
+    
       {/* <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" /> */}
       
       <div className="relative z-10 max-w-5xl mx-auto px-8 text-center">

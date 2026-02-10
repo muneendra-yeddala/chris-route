@@ -11,9 +11,10 @@ export default function Hero() {
             className="absolute inset-0 w-full h-full bg-cover bg-center md:hidden"
             style={{ 
               backgroundImage: `url(${heroImageMobile})`,
-              backgroundSize: "contain", 
+              backgroundSize: "100% 100%",
+              backgroundRepeat: 'no-repeat',
               backgroundPosition: "center",
-              backgroundColor: "#0b0b0b"
+              backgroundColor: "#1a1a1a"
             }}
           />
 
