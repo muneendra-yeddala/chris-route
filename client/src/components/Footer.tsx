@@ -66,10 +66,16 @@ export default function Footer() {
                 <Mail className="h-4 w-4 text-muted-foreground" />
                 <span data-testid="text-email">info@shibuyatravel.com</span>
               </div>
-              {/* <div className="flex items-center gap-3 text-sm">
+              <div className="flex items-center gap-3 text-sm">
                 <MapPin className="h-4 w-4 text-muted-foreground" />
-                <span data-testid="text-address">Shibuya, Tokyo, Japan</span>
-              </div> */}
+                <span data-testid="text-address">326 BLOCKS Yamashita Park, 46 Yamashitacho,
+                 <p>Naka Ward, Yokohama,  Kanagawa, 231-0023</p>
+                 </span>
+              </div>
+              <div className="flex items-center gap-3 text-sm">
+                <span data-testid="text-address">
+                 Kanagawa Governor Registration Travel Service Industry No. 163 </span>
+              </div>
             </div>
           </div>
 
